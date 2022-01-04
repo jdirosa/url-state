@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import { useUrlState } from "../../url-state/useUrlState";
+import { useUrlState } from "@jamesdirosa/use-urlstate";
 
 interface User {
 	name: string;
@@ -31,7 +31,7 @@ export const OtherHome = () => {
 					<Link to="/">Home</Link>
 				</header>
 			</div>
-			<Dialog open={open}>
+			<Dialog maxWidth="sm" open={open}>
 				<DialogTitle>Title!</DialogTitle>
 				<DialogContent>This is a test one</DialogContent>
 				<DialogActions>
